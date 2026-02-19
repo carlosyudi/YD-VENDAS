@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+}
+
+body {
+  @apply bg-white text-black font-sans;
+}
+
+.btn-primary {
+  @apply bg-black text-white px-4 py-2 rounded-lg font-medium hover:bg-zinc-800 transition-colors disabled:opacity-50;
+}
+
+.btn-secondary {
+  @apply bg-white text-black border border-black px-4 py-2 rounded-lg font-medium hover:bg-zinc-100 transition-colors disabled:opacity-50;
+}
+
+.input-field {
+  @apply w-full px-4 py-2 border border-zinc-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent transition-all;
+}
+
+.card {
+  @apply bg-white border border-zinc-200 rounded-xl p-6 shadow-sm;
+}
+
+.title-display {
+  @apply font-display font-bold tracking-tight;
+}
